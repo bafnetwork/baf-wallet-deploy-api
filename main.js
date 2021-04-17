@@ -159,7 +159,7 @@ const models = {
     "CreateNearAccountParams": {
         "dataType": "refObject",
         "properties": {
-            "userId": { "dataType": "string", "required": true },
+            "discordUserId": { "dataType": "string", "required": true },
             "nonce": { "dataType": "string", "required": true },
             "secpSig": { "ref": "ec.Signature", "required": true },
             "edPubkey": { "ref": "PublicKeyWrapper", "required": true },
@@ -341,12 +341,7 @@ const constants = {
         clientId: process.env.DISCORD_CLIENT_ID,
         clientSecret: process.env.DISCORD_CLIENT_SECRET,
     },
-    torus: {
-        verifierName: process.env.TORUS_VERIFIER_NAME,
-        network: process.env.TORUS_NETWORK,
-    }
 };
-console.log(constants);
 
 
 /***/ }),
@@ -419,20 +414,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tsoa__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _service_near__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/near */ "./apps/api/src/app/service/near.ts");
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @baf-wallet/interfaces */ "./libs/interfaces/src/index.ts");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common */ "./apps/api/src/app/controllers/common.ts");
-/* harmony import */ var _config_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config/constants */ "./apps/api/src/app/config/constants.ts");
 var _a;
-
-
 
 
 
 
 let NearController = class NearController extends tsoa__WEBPACK_IMPORTED_MODULE_1__["Controller"] {
     async createNearAccount(requestBody) {
-        const secpPubkey = await Object(_common__WEBPACK_IMPORTED_MODULE_4__["getPublicAddress"])(requestBody.userId, _config_constants__WEBPACK_IMPORTED_MODULE_5__["constants"].torus.verifierName);
-        console.log(secpPubkey);
-        await Object(_service_near__WEBPACK_IMPORTED_MODULE_2__["createNearAccount"])(secpPubkey, requestBody.edPubkey.pk, requestBody.userId, requestBody.nonce, requestBody.secpSig, requestBody.edSig, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_3__["CryptoCurves"].secp256k1);
+        const secpPubkey = Buffer.from('60cf347dbc59d31c1358c8e5cf5e45b822ab85b79cb32a9f3d98184779a9efc2', 'hex'); // TODO: derive from torus
+        await Object(_service_near__WEBPACK_IMPORTED_MODULE_2__["createNearAccount"])(secpPubkey, requestBody.edPubkey.pk, requestBody.discordUserId, requestBody.nonce, requestBody.secpSig, requestBody.edSig, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_3__["CryptoCurves"].secp256k1);
     }
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -447,37 +437,6 @@ NearController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tsoa__WEBPACK_IMPORTED_MODULE_1__["Route"])('near')
 ], NearController);
 
-
-
-/***/ }),
-
-/***/ "./apps/api/src/app/controllers/common.ts":
-/*!************************************************!*\
-  !*** ./apps/api/src/app/controllers/common.ts ***!
-  \************************************************/
-/*! exports provided: getPublicAddress */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPublicAddress", function() { return getPublicAddress; });
-/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @toruslabs/torus.js */ "@toruslabs/torus.js");
-/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @toruslabs/fetch-node-details */ "@toruslabs/fetch-node-details");
-/* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__);
-
-
-async function getPublicAddress(userId, verifierName) {
-    const torus = new _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default.a({});
-    const nodeManager = new _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1___default.a({
-        network: 'ropsten',
-        proxyAddress: '0x4023d2a0D330bF11426B12C6144Cfb96B7fa6183',
-    });
-    const { torusNodeEndpoints, torusNodePub, torusIndexes, } = await nodeManager.getNodeDetails();
-    const torusPublicKey = await torus.getPublicAddress(torusNodeEndpoints, torusNodePub, { verifier: verifierName, verifierId: userId }, true);
-    console.log(torusPublicKey.toString());
-    return Buffer.from(torusPublicKey.toString(), 'hex');
-}
 
 
 /***/ }),
@@ -504,8 +463,7 @@ __webpack_require__.r(__webpack_exports__);
 async function discordRevokeAccessToken(token) {
     const formData = new form_data__WEBPACK_IMPORTED_MODULE_0___default.a();
     formData.append('token', token);
-    console.log(formData);
-    const res = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('https://discordapp.com/api/oauth2/token/revoke', formData, {
+    await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('https://discordapp.com/api/oauth2/token/revoke', formData, {
         headers: Object.assign(Object.assign({}, formData.getHeaders()), { Authorization: `Basic ${Buffer.from(`${_config_constants__WEBPACK_IMPORTED_MODULE_2__["constants"].discord.clientId}:${_config_constants__WEBPACK_IMPORTED_MODULE_2__["constants"].discord.clientSecret}`, 'binary').toString('base64')}` }),
     });
 }
@@ -539,8 +497,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Check the found public key verifies the signature produced by (nonce + userId)
-async function createNearAccount(secpPubkey, edPubkey, userId, nonce, secpSig, edSig, curve = _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__["CryptoCurves"].secp256k1) {
-    const sigsValid = verifyBothSigs(userId, nonce, secpSig, edSig, secpPubkey, edPubkey);
+async function createNearAccount(secpPubkey, edPubkey, discordUserId, nonce, secpSig, edSig, curve = _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__["CryptoCurves"].secp256k1) {
+    const sigsValid = verifyBothSigs(discordUserId, nonce, secpSig, edSig, secpPubkey, edPubkey);
     if (!sigsValid) {
         this.setStatus(403);
         throw 'Proof that the sender owns this public key must provided';
@@ -552,8 +510,8 @@ async function createNearAccount(secpPubkey, edPubkey, userId, nonce, secpSig, e
     const accountName = near.getAccountNameFromPubkey(secpPubkey, curve);
     await near.accountCreator.createAccount(accountName, near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_2__["PublicKey"].fromString(Object(_baf_wallet_multi_chain__WEBPACK_IMPORTED_MODULE_1__["formatKey"])(edPubkey, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__["KeyFormats"].bs58)));
 }
-function verifyBothSigs(userId, nonce, secpSig, edSig, secpPubkey, edPubkey) {
-    const msg = _baf_wallet_multi_chain__WEBPACK_IMPORTED_MODULE_1__["ChainUtil"].createUserVerifyMessage(userId, nonce);
+function verifyBothSigs(discordUserId, nonce, secpSig, edSig, secpPubkey, edPubkey) {
+    const msg = _baf_wallet_multi_chain__WEBPACK_IMPORTED_MODULE_1__["ChainUtil"].createUserVerifyMessage(discordUserId, nonce);
     return (!_baf_wallet_multi_chain__WEBPACK_IMPORTED_MODULE_1__["ChainUtil"].verifySignedSecp256k1(secpPubkey, msg, secpSig) ||
         !_baf_wallet_multi_chain__WEBPACK_IMPORTED_MODULE_1__["ChainUtil"].verifySignedEd25519(edPubkey, msg, edSig));
 }
@@ -1203,30 +1161,8 @@ function keyFromString(key, keyFormat = _baf_wallet_interfaces__WEBPACK_IMPORTED
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/sladuca/baf-wallet-v2/apps/api/src/main.ts */"./apps/api/src/main.ts");
+module.exports = __webpack_require__(/*! /home/runner/work/baf-wallet-v2/baf-wallet-v2/apps/api/src/main.ts */"./apps/api/src/main.ts");
 
-
-/***/ }),
-
-/***/ "@toruslabs/fetch-node-details":
-/*!************************************************!*\
-  !*** external "@toruslabs/fetch-node-details" ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@toruslabs/fetch-node-details");
-
-/***/ }),
-
-/***/ "@toruslabs/torus.js":
-/*!**************************************!*\
-  !*** external "@toruslabs/torus.js" ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@toruslabs/torus.js");
 
 /***/ }),
 
