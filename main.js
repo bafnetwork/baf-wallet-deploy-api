@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 69);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1826,19 +1826,13 @@ module.exports = require("node-fetch");
 
 /***/ }),
 /* 69 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("cors");
+module.exports = __webpack_require__(70);
+
 
 /***/ }),
 /* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(71);
-
-
-/***/ }),
-/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1849,12 +1843,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _build_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(51);
 /* harmony import */ var _app_config_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
-/* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(69);
-/* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(cors__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _baf_wallet_baf_contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
-/* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(0);
-/* harmony import */ var _app_chains_singletons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
-
+/* harmony import */ var _baf_wallet_baf_contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
+/* harmony import */ var _app_chains_singletons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(14);
 
 
 
@@ -1864,32 +1855,31 @@ __webpack_require__.r(__webpack_exports__);
 
 const app = express__WEBPACK_IMPORTED_MODULE_1___default()();
 async function initContracts() {
-    const masterAccount = await Object(_app_chains_singletons__WEBPACK_IMPORTED_MODULE_7__[/* getNearChain */ "a"])().accounts.lookup(_app_config_constants__WEBPACK_IMPORTED_MODULE_3__[/* constants */ "a"].chainParams[_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_6__[/* Chain */ "a"].NEAR].masterAccountID);
-    await Object(_baf_wallet_baf_contract__WEBPACK_IMPORTED_MODULE_5__[/* setBafContract */ "c"])(masterAccount);
+    const masterAccount = await Object(_app_chains_singletons__WEBPACK_IMPORTED_MODULE_6__[/* getNearChain */ "a"])().accounts.lookup(_app_config_constants__WEBPACK_IMPORTED_MODULE_3__[/* constants */ "a"].chainParams[_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_5__[/* Chain */ "a"].NEAR].masterAccountID);
+    await Object(_baf_wallet_baf_contract__WEBPACK_IMPORTED_MODULE_4__[/* setBafContract */ "c"])(masterAccount);
 }
 async function init() {
-    await Object(_app_chains_singletons__WEBPACK_IMPORTED_MODULE_7__[/* initChains */ "b"])();
+    await Object(_app_chains_singletons__WEBPACK_IMPORTED_MODULE_6__[/* initChains */ "b"])();
     await initContracts();
     app.use(body_parser__WEBPACK_IMPORTED_MODULE_0__["urlencoded"]({
         extended: true,
     }));
     app.use(body_parser__WEBPACK_IMPORTED_MODULE_0__["json"]());
-    const whitelist = [
-        'http://localhost:8080',
-        'https://baf-wallet.netlify.app',
-        'https://baf-wallet-v2-git-deploy-work-baf-wallet.vercel.app',
-    ];
-    const corsOptions = {
-        origin: function (origin, callback) {
-            if (whitelist.indexOf(origin) !== -1) {
-                callback(null, true);
-            }
-            else {
-                callback(new Error('Not allowed by CORS'));
-            }
-        },
-    };
-    app.use(cors__WEBPACK_IMPORTED_MODULE_4__(corsOptions));
+    // const whitelist = [
+    //   'http://localhost:8080',
+    //   'https://baf-wallet.netlify.app',
+    //   'https://baf-wallet-v2-git-deploy-work-baf-wallet.vercel.app',
+    // ];
+    // const corsOptions = {
+    //   origin: function (origin, callback) {
+    //     if (whitelist.indexOf(origin) !== -1) {
+    //       callback(null, true);
+    //     } else {
+    //       callback(new Error('Not allowed by CORS'));
+    //     }
+    //   },
+    // };
+    // app.use(cors(corsOptions));
     Object(_build_routes__WEBPACK_IMPORTED_MODULE_2__[/* RegisterRoutes */ "a"])(app);
     const port = process.env.port || 3333;
     const server = app.listen(port, () => {
