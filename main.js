@@ -363,7 +363,7 @@ function formatBytes(buf, fmt = _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_
         case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].BS58:
             return bs58__WEBPACK_IMPORTED_MODULE_1__["encode"](Buffer.from(buf));
         default:
-            throw 'Encoding type not supported';
+            throw new Error('Encoding type not supported');
     }
 }
 function encodeBytes(str, fmt) {
@@ -375,7 +375,7 @@ function encodeBytes(str, fmt) {
         case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].UTF8:
             return Buffer.from(str, 'utf8');
         default:
-            throw 'Encoding type not supported';
+            throw new Error('Encoding type not supported');
     }
 }
 function pkToArray(key) {
@@ -423,7 +423,7 @@ async function initChains() {
 }
 function getNearChain() {
     if (!init)
-        throw 'You must first initialize the chains';
+        throw new Error('You must first initialize the chains');
     return nearChain;
 }
 
@@ -742,7 +742,7 @@ async function createNearAccount(secpPK, edPK, userId, nonce, secpSig, rustEncod
     const msg = Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__[/* createUserVerifyMessage */ "b"])(userId, nonce);
     const sigsValid = verifyBothSigs(msg, secpSig, edSig, secpPK, edPK);
     if (!sigsValid) {
-        throw 'Proof that the sender owns this public key must provided';
+        throw new Error('Proof that the sender owns this public key must provided');
     }
     const near = await Object(_chains_singletons__WEBPACK_IMPORTED_MODULE_4__[/* getNearChain */ "a"])();
     const nearAccount = near.accounts;
@@ -1081,7 +1081,7 @@ async function setBafContract(account) {
 function getBafContract() {
     if (bafContract)
         return bafContract;
-    throw 'BAF Contract is not initialized yet, please call setBafContract';
+    throw new Error('BAF Contract is not initialized yet, please call setBafContract');
 }
 async function buildBafContract(account) {
     const contract = new near_api_js__WEBPACK_IMPORTED_MODULE_0__["Contract"](account, _config_json__WEBPACK_IMPORTED_MODULE_1__.contractName, {
@@ -1188,7 +1188,7 @@ async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
         };
     }
     else {
-        throw 'A key path or key pair must be provided';
+        throw new Error('A key path or key pair must be provided');
     }
     const near = await Object(near_api_js__WEBPACK_IMPORTED_MODULE_1__["connect"])(connectConfig);
     return {
@@ -1763,7 +1763,7 @@ function nearAccounts(nearState) {
         },
         create: async ({ accountID, newAccountPk, initialBalance, method = 'helper', }) => {
             if (method === 'local' && !initialBalance) {
-                throw 'An initial balance must be specified when using a local account creator';
+                throw new Error('An initial balance must be specified when using a local account creator');
             }
             const masterAccount = await near.account(near.config.masterAccount);
             const accountCreator = method === 'helper'
