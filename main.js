@@ -671,22 +671,22 @@ module.exports = require("elliptic");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return initContract; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return nearContract; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return initContract; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getContract; });
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_0__);
 
-const initContract = (nearMasterAccount) => async (params) => {
+const initContract = (nearMasterAccount, contractAccountID) => async (params) => {
     var _a;
-    const contract = new near_api_js__WEBPACK_IMPORTED_MODULE_0__["Contract"]((_a = params.callerAccount) !== null && _a !== void 0 ? _a : nearMasterAccount, params.contractName, {
+    const contract = new near_api_js__WEBPACK_IMPORTED_MODULE_0__["Contract"]((_a = params.callerAccount) !== null && _a !== void 0 ? _a : nearMasterAccount, contractAccountID, {
         viewMethods: params.viewMethods,
         changeMethods: params.changeMethods,
     });
     return contract;
 };
-function nearContract(nearState) {
+function getContract(nearState, contractAccountID) {
     return {
-        init: initContract(nearState.nearMasterAccount),
+        init: initContract(nearState.nearMasterAccount, contractAccountID),
     };
 }
 
@@ -1015,12 +1015,14 @@ var BafError;
         emitError('A key path or key pair must be provided');
     };
     BafError.UnknownNetworkIdent = (identifier) => emitError(`Unknown network identifier ${identifier}`);
-    BafError.InvalidTrustWalletJSON = (err) => emitError(`Received invalid info.json: ${err}. See \`ChainInfo\` in trust-wallet-assets/src/lib/index.ts for more information`);
+    BafError.InvalidChainInfoJSON = (err) => emitError(`Received invalid info.json: ${err}. See \`ChainInfo\` in chain-info/src/lib/index.ts for more information`);
     BafError.UnsupportedEncoding = (fmt) => emitError(`Encoding for format ${fmt} is unsupported`);
     BafError.GenericTxRequiresOauthInfo = () => emitError(`The generic transaction requires the recipient user id, its readable form, and the oauth provider`);
     BafError.SecpPKNotAssociatedWithAccount = (chain) => emitError(`The provided public key is not associated with an account on ${chain}`);
     BafError.NonuniformTxActionRecipients = (chain) => emitError(`${chain} only supports one recipient for a set of Tx Actions`);
     BafError.MissingContractAddress = () => emitError(`The contract address must be specified`);
+    BafError.InvalidTokenContractAddress = (addr) => emitError(`Address ${addr} does not exist or is not a token contract`);
+    BafError.InvalidContractAddress = (addr) => emitError(`Address ${addr} does not exist or is not a contract`);
 })(BafError || (BafError = {}));
 // A wrapper function to emit an error, this would allow us to do things such as easier Sentry logging
 function emitError(errStr) {
@@ -1220,7 +1222,7 @@ const nearChainInterface = {
     rpc: _rpc__WEBPACK_IMPORTED_MODULE_5__[/* nearRpc */ "a"],
     getConstants: _constants__WEBPACK_IMPORTED_MODULE_3__[/* getConstants */ "a"],
     init,
-    contract: _contract__WEBPACK_IMPORTED_MODULE_4__[/* nearContract */ "b"],
+    getContract: _contract__WEBPACK_IMPORTED_MODULE_4__[/* getContract */ "a"],
 };
 async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
     const nodeUrl = `https://rpc.${networkID}.near.org`;
@@ -1256,8 +1258,7 @@ async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
         networkID,
         rpcProvider: new near_api_js__WEBPACK_IMPORTED_MODULE_1__["providers"].JsonRpcProvider(nodeUrl),
         nearMasterAccount,
-        getFungibleTokenContract: (contractName) => Object(_contract__WEBPACK_IMPORTED_MODULE_4__[/* initContract */ "a"])(nearMasterAccount)({
-            contractName,
+        getFungibleTokenContract: (contractAccountID) => Object(_contract__WEBPACK_IMPORTED_MODULE_4__[/* initContract */ "b"])(nearMasterAccount, contractAccountID)({
             viewMethods: ['ft_balance_of', 'ft_total_supply', 'storage_balance_of'],
             changeMethods: ['ft_transfer'],
         }),
@@ -1397,7 +1398,7 @@ async function wrapChainInterface(unwrapped, initParams) {
         accounts: unwrapped.accounts(innerSdk),
         convert: unwrapped.convert,
         getConstants: unwrapped.getConstants,
-        contract: unwrapped.contract(innerSdk),
+        getContract: (address) => unwrapped.getContract(innerSdk, address),
         // Note: in the future, some chainInterfaces might want to do stuff in this fn
         getInner: () => innerSdk,
     };
