@@ -89,18 +89,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_platforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
-/* harmony import */ var _lib_configs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(38);
+/* harmony import */ var _lib_platforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
+/* harmony import */ var _lib_configs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _lib_configs__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
-/* harmony import */ var _lib_chains__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39);
+/* harmony import */ var _lib_chains__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(41);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_chains__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(40);
+/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "g", function() { return _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__["a"]; });
 
-/* harmony import */ var _lib_keysource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(41);
-/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42);
+/* harmony import */ var _lib_keysource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(43);
+/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(44);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["b"]; });
@@ -111,8 +111,8 @@
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "i", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["e"]; });
 
-/* harmony import */ var _lib_frontend__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(43);
-/* harmony import */ var _lib_tx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(44);
+/* harmony import */ var _lib_frontend__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(45);
+/* harmony import */ var _lib_tx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(46);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _lib_tx__WEBPACK_IMPORTED_MODULE_7__["a"]; });
 
 
@@ -136,7 +136,7 @@ module.exports = require("tslib");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(47);
+/* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_errors__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
@@ -147,7 +147,7 @@ module.exports = require("tslib");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48);
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -169,16 +169,10 @@ module.exports = require("near-api-js");
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
-
-module.exports = require("typedjson");
-
-/***/ }),
-/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(45);
+/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(47);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -195,6 +189,12 @@ module.exports = require("typedjson");
 
 
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("typedjson");
 
 /***/ }),
 /* 7 */
@@ -219,16 +219,18 @@ module.exports = require("bn.js");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_near__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
+/* harmony import */ var _lib_near__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(57);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_near__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24);
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_1__["b"]; });
 
-/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(58);
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(60);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _lib_constants__WEBPACK_IMPORTED_MODULE_2__["a"]; });
+
+/* harmony import */ var _lib_rpc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17);
 
 
 
@@ -240,12 +242,12 @@ module.exports = require("bn.js");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_community_contract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_community_contract__WEBPACK_IMPORTED_MODULE_0__["a"]; });
+/* harmony import */ var _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_community_contract__WEBPACK_IMPORTED_MODULE_0__["b"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(57);
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59);
 
 
 
@@ -257,9 +259,9 @@ module.exports = require("bn.js");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return constants; });
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
 /* harmony import */ var _baf_wallet_near__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
 
 
 
@@ -300,9 +302,9 @@ module.exports = require("tweetnacl");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keccak256; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sha256; });
-/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(71);
+/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(73);
 /* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_sha3__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72);
+/* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74);
 /* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_sha256__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -395,11 +397,41 @@ const torusConstants = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return nearRpc; });
+/* unused harmony export getWalletUrl */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRPCUrl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getHelperUrl; });
+/* unused harmony export getExplorerUrl */
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+
+// * add more RPC methods as they are needed
+function nearRpc(_innerSdk) {
+    return {
+        endpoint: getRPCUrl,
+    };
+}
+function getWalletUrl(network) {
+    const networkID = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[/* stringToNetworkID */ "c"])(network !== null && network !== void 0 ? network : 'mainnet');
+    return `https://wallet.${networkID}.near.org`;
+}
+function getRPCUrl(network) {
+    const networkID = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[/* stringToNetworkID */ "c"])(network !== null && network !== void 0 ? network : 'mainnet');
+    return `https://rpc.${networkID}.near.org`;
+}
+const getHelperUrl = (networkID) => `https://helper.${networkID}.near.org`;
+const getExplorerUrl = (networkID) => `https://explorer.${networkID}.near.org`;
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return formatBytes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return encodeBytes; });
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var bs58__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(31);
+/* harmony import */ var bs58__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
 /* harmony import */ var bs58__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bs58__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -429,17 +461,69 @@ function encodeBytes(str, fmt) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export NearNetworkID */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return stringToNetworkID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNearNetworkID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return nearToYoctoNear; });
+/* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var NearNetworkID;
+(function (NearNetworkID) {
+    NearNetworkID["DEVNET"] = "testnet";
+    NearNetworkID["TESTNET"] = "testnet";
+    NearNetworkID["MAINNET"] = "mainnet";
+})(NearNetworkID || (NearNetworkID = {}));
+function stringToNetworkID(str) {
+    switch (str) {
+        case NearNetworkID.DEVNET:
+            return NearNetworkID.DEVNET;
+        case NearNetworkID.TESTNET:
+            return NearNetworkID.TESTNET;
+        case NearNetworkID.MAINNET:
+            return NearNetworkID.MAINNET;
+        default:
+            throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_0__[/* BafError */ "a"].UnknownNetworkIdent;
+    }
+}
+function getNearNetworkID(env) {
+    switch (env) {
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].DEV:
+            return NearNetworkID.DEVNET;
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].TEST:
+            return NearNetworkID.TESTNET;
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].PROD:
+            return NearNetworkID.MAINNET;
+        default:
+            return NearNetworkID.DEVNET;
+    }
+}
+function nearToYoctoNear(amount) {
+    const amountYoctoNearBN = near_api_js__WEBPACK_IMPORTED_MODULE_2__["utils"].format.NEAR_NOMINATION.muln(amount);
+    return amountYoctoNearBN.toString(10);
+}
+
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_singletons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59);
+/* harmony import */ var _lib_singletons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_singletons__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_singletons__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -448,7 +532,7 @@ module.exports = require("axios");
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -470,7 +554,7 @@ const environment = {
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -482,7 +566,7 @@ const environment = {
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var _baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25);
+/* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
 /* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(elliptic__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var tweetnacl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13);
 /* harmony import */ var tweetnacl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tweetnacl__WEBPACK_IMPORTED_MODULE_4__);
@@ -553,7 +637,7 @@ function skFromRng(curveMarker) {
 
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -562,7 +646,7 @@ function skFromRng(curveMarker) {
 /* unused harmony export encodeSecpSigRustContract */
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var _hash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-/* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25);
+/* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26);
 /* harmony import */ var elliptic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(elliptic__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var tweetnacl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
 /* harmony import */ var tweetnacl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tweetnacl__WEBPACK_IMPORTED_MODULE_3__);
@@ -591,7 +675,7 @@ function verifySignature(pk, msg, signedMsg, hashFn = _hash__WEBPACK_IMPORTED_MO
             throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_5__[/* BafError */ "a"].UnsupportedKeyCurve(pk.curve.toString());
     }
 }
-function signMsg(sk, msg, CommunityContractFormat = false, hashFn = _hash__WEBPACK_IMPORTED_MODULE_1__[/* keccak256 */ "a"]) {
+function signMsg(sk, msg, GlobalContractFormat = false, hashFn = _hash__WEBPACK_IMPORTED_MODULE_1__[/* keccak256 */ "a"]) {
     const msgFormat = typeof msg === 'string' ? Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_4__[/* encodeBytes */ "d"])(msg, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].UTF8) : msg;
     switch (sk.curve.toString()) {
         case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* SECP256K1_STR */ "f"]: {
@@ -599,7 +683,7 @@ function signMsg(sk, msg, CommunityContractFormat = false, hashFn = _hash__WEBPA
             const ellipticSig = ellipticSecp256k1.sign(msgHash, sk.data, 'hex', {
                 canonical: true,
             });
-            return CommunityContractFormat
+            return GlobalContractFormat
                 ? encodeSecpSigRustContract(ellipticSig)
                 : Buffer.from(ellipticSig.toDER('hex'), 'hex');
         }
@@ -617,7 +701,7 @@ function encodeSecpSigRustContract(sig) {
 
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -633,65 +717,13 @@ const arrayToObject = (array) => {
 
 
 /***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export NearNetworkID */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return stringToNetworkID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNearNetworkID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return nearToYoctoNear; });
-/* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
-/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-var NearNetworkID;
-(function (NearNetworkID) {
-    NearNetworkID["DEVNET"] = "testnet";
-    NearNetworkID["TESTNET"] = "testnet";
-    NearNetworkID["MAINNET"] = "mainnet";
-})(NearNetworkID || (NearNetworkID = {}));
-function stringToNetworkID(str) {
-    switch (str) {
-        case NearNetworkID.DEVNET:
-            return NearNetworkID.DEVNET;
-        case NearNetworkID.TESTNET:
-            return NearNetworkID.TESTNET;
-        case NearNetworkID.MAINNET:
-            return NearNetworkID.MAINNET;
-        default:
-            throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_0__[/* BafError */ "a"].UnknownNetworkIdent;
-    }
-}
-function getNearNetworkID(env) {
-    switch (env) {
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].DEV:
-            return NearNetworkID.DEVNET;
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].TEST:
-            return NearNetworkID.TESTNET;
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_1__[/* Env */ "d"].PROD:
-            return NearNetworkID.MAINNET;
-        default:
-            return NearNetworkID.DEVNET;
-    }
-}
-function nearToYoctoNear(amount) {
-    const amountYoctoNearBN = near_api_js__WEBPACK_IMPORTED_MODULE_2__["utils"].format.NEAR_NOMINATION.muln(amount);
-    return amountYoctoNearBN.toString(10);
-}
-
-
-/***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("elliptic");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -716,7 +748,7 @@ function getContract(nearState, contractAccountID) {
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -725,10 +757,10 @@ function getContract(nearState, contractAccountID) {
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tsoa__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _service_near__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28);
+/* harmony import */ var _service_near__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
 /* harmony import */ var _baf_wallet_torus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(81);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5);
 var _a, _b, _c;
 
 
@@ -781,7 +813,7 @@ NearController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -789,11 +821,11 @@ NearController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getAccountNonce; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getAccountInfoFromSecpPK; });
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
-/* harmony import */ var _baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
-/* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var _baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21);
 
 
 
@@ -804,85 +836,91 @@ NearController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 async function createNearAccount(secpPK, edPK, userId, nonce, secpSig, rustEncodedSecpSig, edSig, accountID) {
     const msg = Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__[/* createUserVerifyMessage */ "c"])(userId, nonce);
     if (!Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__[/* verifySignature */ "g"])(secpPK, msg, Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__[/* encodeBytes */ "d"])(secpSig, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].HEX))) {
-        throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_5__[/* BafError */ "a"].InvalidSignature(secpPK);
+        throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_4__[/* BafError */ "a"].InvalidSignature(secpPK);
     }
     if (!Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__[/* verifySignature */ "g"])(edPK, msg, Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__[/* encodeBytes */ "d"])(edSig, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].HEX))) {
-        throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_5__[/* BafError */ "a"].InvalidSignature(edPK);
+        throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_4__[/* BafError */ "a"].InvalidSignature(edPK);
     }
-    const near = await Object(_baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_4__[/* getNearChain */ "a"])();
+    const near = await Object(_baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_5__[/* getNearChain */ "a"])();
     const nearAccount = near.accounts;
     await nearAccount.create({
         accountID,
         newAccountPk: edPK,
     });
-    const CommunityContract = await Object(_baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_1__[/* getCommunityContract */ "a"])();
+    const CommunityContract = await Object(_baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__[/* getGlobalContract */ "a"])();
     await CommunityContract.setAccountInfo(secpPK, userId, Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__[/* encodeBytes */ "d"])(rustEncodedSecpSig, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].HEX), accountID);
 }
 async function getAccountNonce(pk) {
-    return await Object(_baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_1__[/* getCommunityContract */ "a"])().getAccountNonce(pk);
+    return await Object(_baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__[/* getGlobalContract */ "a"])().getAccountNonce(pk);
 }
 async function getAccountInfoFromSecpPK(pk) {
     return {
-        near_id: await Object(_baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_1__[/* getCommunityContract */ "a"])().getAccountId(pk),
+        near_id: await Object(_baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__[/* getGlobalContract */ "a"])().getAccountId(pk),
     };
 }
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = require("body-parser");
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("@tsoa/runtime");
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("bs58");
 
 /***/ }),
-/* 32 */
+/* 33 */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"contractName\":\"dev-1625323835651-94521036660851\"}");
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("near-api-js/lib/account_creator");
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("near-api-js/lib/key_stores");
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(63);
+/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(65);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
 
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("thunky/promise");
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("@toruslabs/torus.js");
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -890,7 +928,7 @@ module.exports = require("@toruslabs/torus.js");
 
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -904,7 +942,7 @@ var Env;
 
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -916,7 +954,7 @@ var Chain;
 
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -924,7 +962,7 @@ var Chain;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TokenInfoAssets; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(typedjson__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -1004,7 +1042,7 @@ TokenInfoAssets = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1018,7 +1056,7 @@ var KeySourceMethod;
 
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1040,7 +1078,7 @@ var Encoding;
 
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1048,7 +1086,7 @@ var Encoding;
 
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1070,23 +1108,23 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var _hash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _hash__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _index__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _index__WEBPACK_IMPORTED_MODULE_1__["b"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "g", function() { return _index__WEBPACK_IMPORTED_MODULE_1__["c"]; });
 
-/* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
-/* harmony import */ var _sign__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(54);
+/* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var _sign__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(56);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _utils__WEBPACK_IMPORTED_MODULE_4__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _utils__WEBPACK_IMPORTED_MODULE_4__["b"]; });
@@ -1101,17 +1139,17 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
+/* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _keys__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _keys__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
 /* harmony import */ var _hash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-/* harmony import */ var _sign__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
+/* harmony import */ var _sign__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _sign__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
 
@@ -1120,7 +1158,7 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1136,7 +1174,8 @@ var BafError;
     BafError.InvalidPackedKey = () => emitError('The key in storage has an invalid format');
     BafError.UnsupportedKeyCurve = (supportedCurve) => emitError(`Only ${supportedCurve} keys are supported`);
     BafError.BlockedByCors = () => emitError('Not allowed by CORS policy');
-    BafError.UnintCommunityContract = () => emitError('BAF Contract is not initialized yet, please call setCommunityContract');
+    BafError.UninitGlobalContract = () => emitError('Global Contract is not initialized yet, please call setGlobalContract');
+    BafError.UnintCommunityContract = () => emitError('Community Contract is not initialized yet, please call setCommunityContract');
     BafError.UnsupportedToken = (tokenName) => emitError(`Unsupported token ${tokenName}`);
     BafError.UnsupportedChain = (chainName) => emitError(`Unsupported blockchain ${chainName}`);
     BafError.MissingInitBalance = (chain) => emitError(`An initial balance must be specified when initializing an account on ${chain}`);
@@ -1161,27 +1200,27 @@ function emitError(errStr) {
 
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _bytes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+/* harmony import */ var _bytes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _bytes__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _bytes__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _chains__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49);
-/* harmony import */ var _conversions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(50);
+/* harmony import */ var _chains__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(51);
+/* harmony import */ var _conversions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(52);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _conversions__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony import */ var _discord__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(51);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23);
+/* harmony import */ var _discord__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53);
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(25);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _types__WEBPACK_IMPORTED_MODULE_4__["a"]; });
 
-/* harmony import */ var _user_verifier__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(52);
+/* harmony import */ var _user_verifier__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(54);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _user_verifier__WEBPACK_IMPORTED_MODULE_5__["a"]; });
 
-/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(53);
+/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(55);
 
 
 
@@ -1192,13 +1231,13 @@ function emitError(errStr) {
 
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export strToChain */
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
 
 
 const strToChain = (chain) => {
@@ -1209,12 +1248,12 @@ const strToChain = (chain) => {
 
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return bufferConverter; });
-/* harmony import */ var _bytes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+/* harmony import */ var _bytes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
 /* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -1268,7 +1307,7 @@ function keyPairToUnified(keyPair, curveMarker) {
 
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1296,7 +1335,7 @@ const createDiscordErrMsg = (err) => {
 
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1307,7 +1346,7 @@ function createUserVerifyMessage(userId, nonce) {
 
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1319,7 +1358,7 @@ const deserializeData = (uriEncoded) => JSON.parse(uriEncoded);
 
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1356,7 +1395,7 @@ function skFromString(key, curve, keyFormat = _baf_wallet_interfaces__WEBPACK_IM
 
 
 /***/ }),
-/* 55 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1364,12 +1403,12 @@ function skFromString(key, curve, keyFormat = _baf_wallet_interfaces__WEBPACK_IM
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _tx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(73);
-/* harmony import */ var _contract__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
-/* harmony import */ var _rpc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(75);
+/* harmony import */ var _tx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(75);
+/* harmony import */ var _contract__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
+/* harmony import */ var _rpc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(17);
 /* harmony import */ var _accounts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(76);
 /* harmony import */ var _convert__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(15);
-/* harmony import */ var near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(33);
+/* harmony import */ var near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(35);
 /* harmony import */ var near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77);
 /* harmony import */ var near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8__);
@@ -1389,16 +1428,16 @@ const nearChainInterface = {
     accounts: _accounts__WEBPACK_IMPORTED_MODULE_5__[/* nearAccounts */ "a"],
     tx: _tx__WEBPACK_IMPORTED_MODULE_2__[/* nearTx */ "a"],
     convert: _convert__WEBPACK_IMPORTED_MODULE_6__[/* nearConverter */ "a"],
-    rpc: _rpc__WEBPACK_IMPORTED_MODULE_4__[/* nearRpc */ "a"],
+    rpc: _rpc__WEBPACK_IMPORTED_MODULE_4__[/* nearRpc */ "c"],
     init,
     getContract: _contract__WEBPACK_IMPORTED_MODULE_3__[/* getContract */ "a"],
 };
 async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
-    const nodeUrl = `https://rpc.${networkID}.near.org`;
+    const nodeUrl = Object(_rpc__WEBPACK_IMPORTED_MODULE_4__[/* getRPCUrl */ "b"])(networkID);
     const connectConfig = {
         networkId: networkID,
         nodeUrl,
-        helperUrl: `https://helper.${networkID}.near.org`,
+        helperUrl: Object(_rpc__WEBPACK_IMPORTED_MODULE_4__[/* getHelperUrl */ "a"])(networkID),
         masterAccount: masterAccountID,
         keyPath,
     };
@@ -1436,52 +1475,52 @@ async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
 
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return setCommunityContract; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getCommunityContract; });
+/* unused harmony export GlobalContractConfig */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return setGlobalContract; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getGlobalContract; });
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(74);
-var _config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(74, 1);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33);
+var _config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(33, 1);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
 
 
 
 
-let communityContract;
-async function setCommunityContract(account) {
-    communityContract = await buildCommunityContract(account);
-    return communityContract;
+const GlobalContractConfig = Object.assign({}, _config_json__WEBPACK_IMPORTED_MODULE_2__);
+let globalContract;
+async function setGlobalContract(account) {
+    globalContract = await buildGlobalContract(account);
+    return globalContract;
 }
-function getCommunityContract() {
-    if (communityContract)
-        return communityContract;
-    throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_1__[/* BafError */ "a"].UnintCommunityContract();
+function getGlobalContract() {
+    if (globalContract)
+        return globalContract;
+    throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_1__[/* BafError */ "a"].UninitGlobalContract();
 }
-async function buildCommunityContract(account) {
+async function buildGlobalContract(account) {
     const contract = new near_api_js__WEBPACK_IMPORTED_MODULE_0__["Contract"](account, _config_json__WEBPACK_IMPORTED_MODULE_2__.contractName, {
         viewMethods: [
             'get_account_id',
             'get_account_nonce',
-            'get_admins',
-            'get_default_nft_contract',
+            'get_community_contract',
+            'get_community_default_nft_contract',
         ],
         changeMethods: [
             'set_account_info',
             'delete_account_info',
-            'add_admins',
-            'remove_admins',
-            'set_default_nft_contract',
+            'set_community_contract',
         ],
     });
     return Object.assign(Object.assign({}, contract), { 
         /**
          * Below are override functions for the calls
-         * Find the contract code in libs/community-contract/contract
+         * Find the contract code in libs/global-contract/contract
          */
         getAccountId: async (pk) => {
             const ret = await contract.get_account_id({
@@ -1502,24 +1541,24 @@ async function buildCommunityContract(account) {
             user_id,
             secp_pk: Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_3__[/* pkToArray */ "d"])(pk),
             secp_sig_s: [...secp_sig_s],
-        }) });
+        }), getCommunityContract: (server) => contract.get_community_contract(server) });
 }
 
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export CommunityContractConstants */
-const CommunityContractConstants = {
+/* unused harmony export globalContractConstants */
+const globalContractConstants = {
     // :)
     beneficiaryId: 'lev.near',
 };
 
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1528,7 +1567,7 @@ const nearSupportedContractTokens = ['ft.levtester.testnet'];
 
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1559,22 +1598,22 @@ function getNearChain() {
 
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
-/* harmony import */ var _switches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(62);
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(63);
+/* harmony import */ var _switches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _switches__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(64);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(66);
 
 
 
 
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1582,7 +1621,7 @@ function getNearChain() {
 
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1628,7 +1667,7 @@ async function wrapChainInterface(unwrapped, initParams, chain) {
 
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1638,12 +1677,12 @@ async function wrapChainInterface(unwrapped, initParams, chain) {
 /* unused harmony export getContractAddresses */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getTokenInfo; });
 /* unused harmony export getContractTokenInfoFromSymbol */
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var reflect_metadata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87);
 /* harmony import */ var reflect_metadata__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reflect_metadata__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
 /* harmony import */ var typedjson__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(typedjson__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
 
@@ -1713,7 +1752,7 @@ async function getContractTokenInfoFromSymbol(symbol, contractTokens) {
 
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1745,20 +1784,20 @@ function formatNativeTokenAmountToIndivisibleUnit(amount, chain) {
 
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getTorusPublicAddress; });
 /* unused harmony export assertLoginTypeRegistered */
-/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
+/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
 /* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(82);
 /* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
 
 
 
@@ -1792,21 +1831,21 @@ function assertLoginTypeRegistered(loginType) {
 
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = require("express");
 
 /***/ }),
-/* 67 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterRoutes; });
-/* harmony import */ var _tsoa_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
+/* harmony import */ var _tsoa_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31);
 /* harmony import */ var _tsoa_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_tsoa_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _src_app_controllers_DiscordController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68);
-/* harmony import */ var _src_app_controllers_NearController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27);
+/* harmony import */ var _src_app_controllers_DiscordController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(70);
+/* harmony import */ var _src_app_controllers_NearController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28);
 /* tslint:disable */
 /* eslint-disable */
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -2015,7 +2054,7 @@ function RegisterRoutes(app) {
 
 
 /***/ }),
-/* 68 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2024,7 +2063,7 @@ function RegisterRoutes(app) {
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tsoa__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _service_discord__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
+/* harmony import */ var _service_discord__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(71);
 var _a;
 
 
@@ -2049,14 +2088,14 @@ DiscordController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return discordRevokeAccessToken; });
-/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(70);
+/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72);
 /* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(form_data__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _config_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
@@ -2072,25 +2111,25 @@ async function discordRevokeAccessToken(token) {
 
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("form-data");
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = require("js-sha3");
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ (function(module, exports) {
 
 module.exports = require("js-sha256");
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2101,15 +2140,15 @@ module.exports = require("js-sha256");
 /* unused harmony export signNearTx */
 /* unused harmony export sendNearTx */
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
-/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
-/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bn_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
-/* harmony import */ var bn_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bn_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4);
-/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _convert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15);
-/* harmony import */ var _baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
+/* harmony import */ var _baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bn_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var bn_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bn_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4);
+/* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _convert__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(15);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2);
 
 
@@ -2134,35 +2173,37 @@ function buildNativeAction(receiverId, action, innerSdk) {
     switch (actionType) {
         case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER:
             return [
-                near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].transfer(new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(action.amount, 10)),
+                near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].transfer(new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(action.amount, 10)),
             ];
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER_CONTRACT_TOKEN:
-            const paramsTransfer = action;
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER_CONTRACT_TOKEN: {
+            const params = action;
             return [
-                near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].functionCall('ft_transfer', {
+                near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].functionCall('ft_transfer', {
                     receiver_id: receiverId,
-                    amount: paramsTransfer.amount,
-                    memo: (_a = paramsTransfer.memo) !== null && _a !== void 0 ? _a : null,
+                    amount: params.amount,
+                    memo: (_a = params.memo) !== null && _a !== void 0 ? _a : null,
                 }, 
                 // TODO: maximum gas fees per chain: see https://github.com/bafnetwork/baf-wallet-v2/issues/68
-                new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(10000000000000), // Maximum gas fee
-                new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(1) // A deposit associated with the ft_transfer action
+                new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(10000000000000), // Maximum gas fee
+                new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(1) // A deposit associated with the ft_transfer action
                 ),
             ];
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER_NFT:
-            const paramsNFT = action;
+        }
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER_NFT: {
+            const params = action;
             return [
-                near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].functionCall('nft_transfer', {
+                near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].functionCall('nft_transfer', {
                     receiver_id: receiverId,
-                    token_id: paramsNFT.tokenId,
-                    approval_id: (_b = paramsNFT.approvalId) !== null && _b !== void 0 ? _b : null,
-                    memo: (_c = paramsNFT.memo) !== null && _c !== void 0 ? _c : null,
+                    token_id: params.tokenId,
+                    approval_id: (_b = params.approvalId) !== null && _b !== void 0 ? _b : null,
+                    memo: (_c = params.memo) !== null && _c !== void 0 ? _c : null,
                 }, 
                 // TODO: maximum gas fees per chain: see https://github.com/bafnetwork/baf-wallet-v2/issues/68
-                new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(10000000000000), // Maximum gas fee
-                new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(1)),
+                new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(10000000000000), // Maximum gas fee
+                new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(1)),
             ];
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CREATE_ACCOUNT:
+        }
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CREATE_ACCOUNT: {
             const params = action;
             if (params.amount && parseInt(params.amount) > 0) {
                 const transferAction = {
@@ -2170,19 +2211,21 @@ function buildNativeAction(receiverId, action, innerSdk) {
                     amount: params.amount,
                 };
                 return [
-                    near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].createAccount(),
+                    near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].createAccount(),
                     ...buildNativeAction(_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].TRANSFER, transferAction, innerSdk),
                 ];
             }
             else {
-                near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].createAccount();
+                return [near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].createAccount()];
             }
-        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CONTRACT_CALL:
-            const paramsContractCall = action;
+        }
+        case _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CONTRACT_CALL: {
+            const params = action;
             return [
-                near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].functionCall(paramsContractCall.functionName, paramsContractCall.functionArgs, new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(10000000000000), // Maximum gas fee
-                new bn_js__WEBPACK_IMPORTED_MODULE_3___default.a(paramsContractCall.deposit || 0)),
+                near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].functionCall(params.functionName, params.functionArgs, new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(10000000000000), // Maximum gas fee
+                new bn_js__WEBPACK_IMPORTED_MODULE_4___default.a(params.deposit || 0)),
             ];
+        }
         default:
             throw `Action of type ${actionType} is unsupported`;
     }
@@ -2212,9 +2255,9 @@ const extractGenericActionsFromTx = (txParams) => {
 const buildParamsFromGenericTx = (innerSdk) => async (txParams, recipientPk, _senderPk, senderPk) => {
     let recipientAccountID = txParams.recipientAddress
         ? txParams.recipientAddress
-        : await Object(_baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_6__[/* getCommunityContract */ "a"])().getAccountId(recipientPk);
+        : await Object(_baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_1__[/* getGlobalContract */ "a"])().getAccountId(recipientPk);
     if (!recipientAccountID) {
-        let createAccountAction = txParams.actions.find((action) => action.type === _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CREATE_ACCOUNT);
+        const createAccountAction = txParams.actions.find((action) => action.type === _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* GenericTxSupportedActions */ "e"].CREATE_ACCOUNT);
         recipientAccountID = createAccountAction === null || createAccountAction === void 0 ? void 0 : createAccountAction.accountID;
     }
     if (!recipientAccountID) {
@@ -2232,25 +2275,25 @@ const buildNearTx = (innerSdk) => async ({ actions, senderPk, senderAccountID, r
     if (actions.some(isContractCall) && !checkAllContractActions(actions)) {
         throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_7__[/* BafError */ "a"].NonuniformTxActionRecipients(_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR);
     }
-    const nearSenderPk = _convert__WEBPACK_IMPORTED_MODULE_5__[/* nearConverter */ "a"].pkFromUnified(senderPk);
+    const nearSenderPk = _convert__WEBPACK_IMPORTED_MODULE_6__[/* nearConverter */ "a"].pkFromUnified(senderPk);
     const accessKey = await innerSdk.rpcProvider.query(`access_key/${senderAccountID}/${nearSenderPk.toString()}`, '');
     const nonce = ++accessKey.nonce;
-    const recentBlockHash = near_api_js__WEBPACK_IMPORTED_MODULE_4__["utils"].serialize.base_decode(accessKey.block_hash);
+    const recentBlockHash = near_api_js__WEBPACK_IMPORTED_MODULE_5__["utils"].serialize.base_decode(accessKey.block_hash);
     const nativeActions = actions.flatMap((action) => buildNativeAction(recipientAccountID, action, innerSdk));
     const transactionRecipient = actions.some(isContractCall) && actions.length > 0
         ? actions[0].contractAddress
         : recipientAccountID;
-    return near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].createTransaction(senderAccountID, nearSenderPk, transactionRecipient, nonce, nativeActions, recentBlockHash);
+    return near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].createTransaction(senderAccountID, nearSenderPk, transactionRecipient, nonce, nativeActions, recentBlockHash);
 };
 async function signNearTx(tx, keyPair, _opts) {
-    const nearKeyPair = _convert__WEBPACK_IMPORTED_MODULE_5__[/* nearConverter */ "a"].keyPairFromUnified(keyPair);
-    const serializedTx = near_api_js__WEBPACK_IMPORTED_MODULE_4__["utils"].serialize.serialize(near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].SCHEMA, tx);
-    const serializedTxHash = new Uint8Array(Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_1__[/* sha256 */ "e"])(buffer__WEBPACK_IMPORTED_MODULE_2__["Buffer"].from(serializedTx)));
+    const nearKeyPair = _convert__WEBPACK_IMPORTED_MODULE_6__[/* nearConverter */ "a"].keyPairFromUnified(keyPair);
+    const serializedTx = near_api_js__WEBPACK_IMPORTED_MODULE_5__["utils"].serialize.serialize(near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].SCHEMA, tx);
+    const serializedTxHash = new Uint8Array(Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_2__[/* sha256 */ "e"])(buffer__WEBPACK_IMPORTED_MODULE_3__["Buffer"].from(serializedTx)));
     const signature = nearKeyPair.sign(serializedTxHash);
     // const [_, signedTx] = await signTransaction(tx, )
-    return new near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].SignedTransaction({
+    return new near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].SignedTransaction({
         transaction: tx,
-        signature: new near_api_js__WEBPACK_IMPORTED_MODULE_4__["transactions"].Signature({
+        signature: new near_api_js__WEBPACK_IMPORTED_MODULE_5__["transactions"].Signature({
             keyType: tx.publicKey.keyType,
             data: signature.signature,
         }),
@@ -2259,7 +2302,7 @@ async function signNearTx(tx, keyPair, _opts) {
 const sendNearTx = (innerSdk) => async (tx) => {
     const serialized = tx.encode();
     const result = await innerSdk.rpcProvider.sendJsonRpc('broadcast_tx_commit', [
-        buffer__WEBPACK_IMPORTED_MODULE_2__["Buffer"].from(serialized).toString('base64'),
+        buffer__WEBPACK_IMPORTED_MODULE_3__["Buffer"].from(serialized).toString('base64'),
     ]);
     const explorerLink = `https://explorer.${innerSdk.networkID}.near.org/transactions/${result.transaction.hash}`;
     return {
@@ -2270,43 +2313,19 @@ const sendNearTx = (innerSdk) => async (tx) => {
 
 
 /***/ }),
-/* 74 */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"contractName\":\"dev-1623353929808-71316364508823\"}");
-
-/***/ }),
-/* 75 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return nearRpc; });
-/* unused harmony export getNodeUrl */
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-
-// * add more RPC methods as they are needed
-function nearRpc(_innerSdk) {
-    return {
-        endpoint: getNodeUrl,
-    };
-}
-function getNodeUrl(network) {
-    const networkID = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[/* stringToNetworkID */ "c"])(network !== null && network !== void 0 ? network : 'mainnet');
-    return `https://rpc.${networkID}.near.org`;
-}
-
-
-/***/ }),
 /* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return nearAccounts; });
+/* unused harmony export associatedKeys */
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var near_api_js_lib_account_creator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
+/* harmony import */ var near_api_js_lib_account_creator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
 /* harmony import */ var near_api_js_lib_account_creator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(near_api_js_lib_account_creator__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _convert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
+/* harmony import */ var _baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
+
 
 
 
@@ -2337,6 +2356,7 @@ function nearAccounts(nearState) {
                 },
             };
         },
+        associatedKeys,
         create: async ({ accountID, newAccountPk, initialBalance, method = 'helper', }) => {
             if (method === 'local' && !initialBalance) {
                 throw _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_3__[/* BafError */ "a"].MissingInitBalance(_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR);
@@ -2349,6 +2369,14 @@ function nearAccounts(nearState) {
             return await near.account(accountID);
         },
     };
+}
+async function associatedKeys(account) {
+    const keys = await account.getAccessKeys();
+    const edPkStrs = keys
+        .map((key) => key.public_key)
+        .filter((keyStr) => keyStr.includes('ed25519:'))
+        .map((key) => key.split('ed25519:')[1]);
+    return edPkStrs.map((str) => Object(_baf_wallet_crypto__WEBPACK_IMPORTED_MODULE_4__[/* pkFromString */ "b"])(str, _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* ed25519Marker */ "h"], _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Encoding */ "c"].BS58));
 }
 
 
@@ -2369,7 +2397,7 @@ module.exports = require("dotenv");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(60);
+/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
@@ -2381,8 +2409,8 @@ module.exports = require("dotenv");
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return initChainConstants; });
-/* harmony import */ var _baf_wallet_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
-/* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35);
+/* harmony import */ var _baf_wallet_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
+/* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37);
 /* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(thunky_promise__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _baf_wallet_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 
@@ -2409,7 +2437,7 @@ async function initChainConstants(chain, tokenContracts) {
 
 "use strict";
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _torus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(65);
+/* harmony import */ var _torus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _torus__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 
@@ -2447,17 +2475,17 @@ module.exports = __webpack_require__(86);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
+/* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(body_parser__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66);
+/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68);
 /* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _build_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(67);
+/* harmony import */ var _build_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
 /* harmony import */ var _app_config_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(84);
 /* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(cors__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
+/* harmony import */ var _baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(0);
-/* harmony import */ var _baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(19);
+/* harmony import */ var _baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(21);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2);
 
 
@@ -2471,7 +2499,7 @@ __webpack_require__.r(__webpack_exports__);
 const app = express__WEBPACK_IMPORTED_MODULE_1___default()();
 async function initContracts() {
     const masterAccount = await Object(_baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_7__[/* getNearChain */ "a"])().accounts.lookup(_app_config_constants__WEBPACK_IMPORTED_MODULE_3__[/* constants */ "a"].chainParams[_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_6__[/* Chain */ "a"].NEAR].masterAccountID);
-    await Object(_baf_wallet_community_contract__WEBPACK_IMPORTED_MODULE_5__[/* setCommunityContract */ "b"])(masterAccount);
+    await Object(_baf_wallet_global_contract__WEBPACK_IMPORTED_MODULE_5__[/* setGlobalContract */ "b"])(masterAccount);
 }
 async function init() {
     await Object(_baf_wallet_global_state__WEBPACK_IMPORTED_MODULE_7__[/* initChains */ "b"])(_app_config_constants__WEBPACK_IMPORTED_MODULE_3__[/* constants */ "a"].chainParams);
