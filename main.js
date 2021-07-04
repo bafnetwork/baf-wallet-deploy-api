@@ -89,18 +89,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_platforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
-/* harmony import */ var _lib_configs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
+/* harmony import */ var _lib_platforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _lib_configs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _lib_configs__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
-/* harmony import */ var _lib_chains__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(41);
+/* harmony import */ var _lib_chains__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(40);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_chains__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42);
+/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(41);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "g", function() { return _lib_chain_info__WEBPACK_IMPORTED_MODULE_3__["a"]; });
 
-/* harmony import */ var _lib_keysource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(43);
-/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(44);
+/* harmony import */ var _lib_keysource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42);
+/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(43);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["b"]; });
@@ -111,8 +111,8 @@
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "i", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_5__["e"]; });
 
-/* harmony import */ var _lib_frontend__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(45);
-/* harmony import */ var _lib_tx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(46);
+/* harmony import */ var _lib_frontend__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(44);
+/* harmony import */ var _lib_tx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(45);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _lib_tx__WEBPACK_IMPORTED_MODULE_7__["a"]; });
 
 
@@ -136,7 +136,7 @@ module.exports = require("tslib");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49);
+/* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_errors__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
@@ -147,7 +147,7 @@ module.exports = require("tslib");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50);
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_utils__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -184,7 +184,7 @@ module.exports = require("tsoa");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(47);
+/* harmony import */ var _lib_crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(46);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_crypto__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -217,7 +217,7 @@ module.exports = require("bn.js");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_near__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(57);
+/* harmony import */ var _lib_near__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _lib_near__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
@@ -302,12 +302,12 @@ function getContract(nearState, contractAccountID) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58);
+/* harmony import */ var _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(57);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_global_contract__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59);
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58);
 
 
 
@@ -325,9 +325,9 @@ module.exports = require("tweetnacl");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keccak256; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sha256; });
-/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72);
+/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(71);
 /* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_sha3__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(73);
+/* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72);
 /* harmony import */ var js_sha256__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_sha256__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -570,7 +570,7 @@ module.exports = require("axios");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_singletons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
+/* harmony import */ var _lib_singletons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(60);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_singletons__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _lib_singletons__WEBPACK_IMPORTED_MODULE_0__["b"]; });
@@ -749,8 +749,8 @@ const arrayToObject = (array) => {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNearSupportedContractTokens; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return initChainConstants; });
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _baf_wallet_chain_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(77);
-/* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37);
+/* harmony import */ var _baf_wallet_chain_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76);
+/* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77);
 /* harmony import */ var thunky_promise__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(thunky_promise__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _baf_wallet_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 /* harmony import */ var _contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
@@ -791,25 +791,31 @@ const getNearSupportedContractTokens = (env) => {
     }
 };
 async function initChainConstants(nearState, tokenContracts) {
-    const ft_contract_inits = tokenContracts.map((contractID) => Object(_contract__WEBPACK_IMPORTED_MODULE_4__[/* getContract */ "a"])(nearState, contractID)
-        .init);
-    const tokens = tokenContracts.map((tokenContract, i) => {
+    const ft_metadatas = await Promise.all(tokenContracts.map((contractID) => Object(_contract__WEBPACK_IMPORTED_MODULE_4__[/* getContract */ "a"])(nearState, contractID)
+        .init({
+        viewMethods: ['ft_metadata'],
+        changeMethods: [],
+    })
+        .then((contract) => contract.ft_metadata())));
+    const tokensContractMapping = tokenContracts.map((tokenContract, i) => {
         return {
             key: tokenContract,
-            val: thunky_promise__WEBPACK_IMPORTED_MODULE_2___default()(async () => {
-                const ft_contract = await ft_contract_inits[i]({
-                    viewMethods: ['ft_metadata'],
-                    changeMethods: [],
-                });
-                const metadata = await ft_contract.ft_metadata();
-                console.log(metadata);
-                return Object.assign({ chain: _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR, type: 'COIN' }, metadata);
-            }),
+            val: async () => {
+                return Object.assign(Object.assign({}, ft_metadatas[i]), { contractAddress: tokenContract, chain: _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR, type: 'COIN' });
+            },
+        };
+    });
+    const tokens = tokenContracts.map((tokenContract, i) => {
+        return {
+            key: ft_metadatas[i].symbol,
+            val: async () => {
+                return Object.assign(Object.assign({}, ft_metadatas[i]), { contractAddress: tokenContract, chain: _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR, type: 'COIN' });
+            },
         };
     });
     return {
         nativeTokenInfo: thunky_promise__WEBPACK_IMPORTED_MODULE_2___default()(() => Object(_baf_wallet_chain_info__WEBPACK_IMPORTED_MODULE_1__[/* getTokenInfo */ "a"])(_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Chain */ "a"].NEAR)),
-        tokens: Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_3__[/* arrayToObject */ "a"])(tokens),
+        tokens: Object.assign(Object.assign({}, Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_3__[/* arrayToObject */ "a"])(tokens)), Object(_baf_wallet_utils__WEBPACK_IMPORTED_MODULE_3__[/* arrayToObject */ "a"])(tokensContractMapping)),
         supportedContractTokenContracts: tokenContracts,
     };
 }
@@ -981,16 +987,10 @@ module.exports = require("near-api-js/lib/key_stores");
 /* 37 */
 /***/ (function(module, exports) {
 
-module.exports = require("thunky/promise");
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
 module.exports = require("@toruslabs/torus.js");
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -998,7 +998,7 @@ module.exports = require("@toruslabs/torus.js");
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1012,7 +1012,7 @@ var Env;
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1024,7 +1024,7 @@ var Chain;
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1112,7 +1112,7 @@ TokenInfoAssets = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1126,7 +1126,7 @@ var KeySourceMethod;
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1149,7 +1149,7 @@ var Encoding;
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1157,7 +1157,7 @@ var Encoding;
 
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1178,14 +1178,14 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var _hash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _hash__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(47);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _index__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _index__WEBPACK_IMPORTED_MODULE_1__["b"]; });
@@ -1194,7 +1194,7 @@ var SupportedTransferTypes;
 
 /* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
 /* harmony import */ var _sign__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(56);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _utils__WEBPACK_IMPORTED_MODULE_4__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _utils__WEBPACK_IMPORTED_MODULE_4__["b"]; });
@@ -1207,7 +1207,7 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1226,7 +1226,7 @@ var SupportedTransferTypes;
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1268,7 +1268,7 @@ function emitError(errStr) {
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1277,18 +1277,18 @@ function emitError(errStr) {
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _bytes__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _chains__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(51);
-/* harmony import */ var _conversions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(52);
+/* harmony import */ var _chains__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50);
+/* harmony import */ var _conversions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(51);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _conversions__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony import */ var _discord__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53);
+/* harmony import */ var _discord__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(52);
 /* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _types__WEBPACK_IMPORTED_MODULE_4__["a"]; });
 
-/* harmony import */ var _user_verifier__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(54);
+/* harmony import */ var _user_verifier__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(53);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _user_verifier__WEBPACK_IMPORTED_MODULE_5__["a"]; });
 
-/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(55);
+/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(54);
 
 
 
@@ -1299,7 +1299,7 @@ function emitError(errStr) {
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1316,7 +1316,7 @@ const strToChain = (chain) => {
 
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1375,7 +1375,7 @@ function keyPairToUnified(keyPair, curveMarker) {
 
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1403,7 +1403,7 @@ const createDiscordErrMsg = (err) => {
 
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1414,7 +1414,7 @@ function createUserVerifyMessage(userId, nonce) {
 
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1426,7 +1426,7 @@ const deserializeData = (uriEncoded) => JSON.parse(uriEncoded);
 
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1459,7 +1459,7 @@ function skFromString(key, curve, keyFormat = _baf_wallet_interfaces__WEBPACK_IM
 
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1467,14 +1467,14 @@ function skFromString(key, curve, keyFormat = _baf_wallet_interfaces__WEBPACK_IM
 /* harmony import */ var _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var near_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(near_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _tx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(74);
+/* harmony import */ var _tx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(73);
 /* harmony import */ var _contract__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var _rpc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18);
-/* harmony import */ var _accounts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(75);
+/* harmony import */ var _accounts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(74);
 /* harmony import */ var _convert__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16);
 /* harmony import */ var near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(36);
 /* harmony import */ var near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(near_api_js_lib_key_stores__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(76);
+/* harmony import */ var near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(75);
 /* harmony import */ var near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(near_api_js_lib_utils__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _baf_wallet_errors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(2);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(27);
@@ -1542,7 +1542,7 @@ async function init({ networkID, masterAccountID, keyPath, keyPair, }) {
 
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1593,7 +1593,7 @@ async function buildGlobalContract(account) {
 
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1605,7 +1605,7 @@ const globalContractConstants = {
 
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1668,7 +1668,8 @@ async function getTokenInfo(chain, contractAddress) {
         }
         const serializer = new typedjson__WEBPACK_IMPORTED_MODULE_3__["TypedJSON"](_baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_4__[/* TokenInfoAssets */ "g"]);
         const _tokInfo = serializer.parse(data);
-        return Object.assign(Object.assign({}, _tokInfo), { chain });
+        return Object.assign(Object.assign({}, _tokInfo), { contractAddress,
+            chain });
     }
     catch (err) {
         if (err.isAxiosError) {
@@ -1690,7 +1691,7 @@ async function getContractTokenInfoFromSymbol(symbol, contractTokens) {
 
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1721,30 +1722,30 @@ function getNearChain() {
 
 
 /***/ }),
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);
+/* harmony import */ var _switches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(63);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _switches__WEBPACK_IMPORTED_MODULE_1__["a"]; });
+
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(64);
+
+
+
+
+
+/***/ }),
 /* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(63);
-/* harmony import */ var _switches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _switches__WEBPACK_IMPORTED_MODULE_1__["a"]; });
-
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(65);
-
-
 
 
 
 /***/ }),
 /* 63 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-
-
-/***/ }),
-/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1788,7 +1789,7 @@ async function wrapChainInterface(unwrapped, initParams, chain) {
 
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1820,13 +1821,13 @@ function formatNativeTokenAmountToIndivisibleUnit(amount, chain) {
 
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getTorusPublicAddress; });
 /* unused harmony export assertLoginTypeRegistered */
-/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
 /* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(81);
 /* harmony import */ var _toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_toruslabs_fetch_node_details__WEBPACK_IMPORTED_MODULE_1__);
@@ -1867,20 +1868,20 @@ function assertLoginTypeRegistered(loginType) {
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = require("express");
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterRoutes; });
 /* harmony import */ var _tsoa_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
 /* harmony import */ var _tsoa_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_tsoa_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _src_app_controllers_DiscordController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(69);
+/* harmony import */ var _src_app_controllers_DiscordController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68);
 /* harmony import */ var _src_app_controllers_NearController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
 /* tslint:disable */
 /* eslint-disable */
@@ -2090,7 +2091,7 @@ function RegisterRoutes(app) {
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2099,7 +2100,7 @@ function RegisterRoutes(app) {
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var tsoa__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tsoa__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _service_discord__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70);
+/* harmony import */ var _service_discord__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
 var _a;
 
 
@@ -2124,12 +2125,12 @@ DiscordController = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return discordRevokeAccessToken; });
-/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(71);
+/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(70);
 /* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(form_data__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
@@ -2147,25 +2148,25 @@ async function discordRevokeAccessToken(token) {
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = require("form-data");
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = require("js-sha3");
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("js-sha256");
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2329,7 +2330,7 @@ const sendNearTx = (innerSdk) => async (tx) => {
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2397,21 +2398,27 @@ async function associatedKeys(account) {
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports) {
 
 module.exports = require("near-api-js/lib/utils");
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(60);
+/* harmony import */ var _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib_chain_info__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
 
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports) {
+
+module.exports = require("thunky/promise");
 
 /***/ }),
 /* 78 */
@@ -2424,7 +2431,7 @@ module.exports = require("dotenv");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);
+/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _lib__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 
@@ -2436,7 +2443,7 @@ module.exports = require("dotenv");
 
 "use strict";
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _torus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66);
+/* harmony import */ var _torus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(65);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _torus__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 
@@ -2476,9 +2483,9 @@ module.exports = __webpack_require__(85);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31);
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(body_parser__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67);
+/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66);
 /* harmony import */ var express__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _build_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(68);
+/* harmony import */ var _build_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(67);
 /* harmony import */ var _app_config_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(11);
 /* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(83);
 /* harmony import */ var cors__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(cors__WEBPACK_IMPORTED_MODULE_4__);
