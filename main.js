@@ -1731,6 +1731,7 @@ function getNearChain() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export tryGetTorusPublicAddress */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getTorusPublicAddress; });
 /* unused harmony export assertLoginTypeRegistered */
 /* harmony import */ var _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
@@ -1751,6 +1752,14 @@ const torus = new _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default.a({
     allowHost: 'https://signer.tor.us/api/allow',
 });
 _toruslabs_torus_js__WEBPACK_IMPORTED_MODULE_0___default.a.setAPIKey('torus-default');
+async function tryGetTorusPublicAddress(userId, loginType) {
+    try {
+        return getTorusPublicAddress(userId, loginType);
+    }
+    catch (e) {
+        return null;
+    }
+}
 async function getTorusPublicAddress(userId, loginType) {
     assertLoginTypeRegistered(loginType);
     // Configuration from https://github.com/torusresearch/torus-direct-web-sdk/blob/master/src/login.ts
