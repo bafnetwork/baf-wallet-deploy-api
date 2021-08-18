@@ -243,7 +243,7 @@ const constants = {
     torus: {
         verifierName: 'discord',
         network: _environments_environment__WEBPACK_IMPORTED_MODULE_3__[/* environment */ "a"].env === _baf_wallet_interfaces__WEBPACK_IMPORTED_MODULE_0__[/* Env */ "d"].PROD ? 'mainnet' : 'testnet',
-        proxyAddress: '0x4023d2a0D330bF11426B12C6144Cfb96B7fa6183',
+        proxyAddress: process.env.TORUS_PROXY_ADDRESS,
     },
 };
 
@@ -381,7 +381,7 @@ const nearConverter = Object.assign(Object.assign({}, _baf_wallet_utils__WEBPACK
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return torusConstants; });
 const torusConstants = {
     network: 'ropsten',
-    proxyAddress: '0x4023d2a0D330bF11426B12C6144Cfb96B7fa6183',
+    proxyAddress: process.env.TORUS_PROXY_ADDRESS,
     verifierInfo: {
         discord: {
             verifier: process.env.TORUS_VERIFIER_NAME,
